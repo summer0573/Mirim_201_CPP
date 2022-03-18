@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="09 포인터 연산.c" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="기본c++.cpp" />
   </ItemGroup>
