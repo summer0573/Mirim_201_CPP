@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12. 구조체 포인터.c">
+    <ClCompile Include="sumAge.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
