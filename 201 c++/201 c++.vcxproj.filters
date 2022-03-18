@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="기본c++.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="09 포인터 연산.c">
+    <ClCompile Include="12. 구조체 포인터.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
