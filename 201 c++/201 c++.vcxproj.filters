@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sumAge.c">
+    <ClCompile Include="17 증가연산자.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
