@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="02 - 04 참조2.cpp">
+    <ClCompile Include="02 - 05 함수 오버로딩.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="02 - 05.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="02 - 05.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

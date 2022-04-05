@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="02 - 04 참조2.cpp" />
+    <ClCompile Include="02 - 05 함수 오버로딩.cpp" />
+    <ClCompile Include="02 - 05.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="02 - 05.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
