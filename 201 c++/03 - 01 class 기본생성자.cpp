@@ -16,9 +16,15 @@ public:
 	}
 	//아래와 같은 생서자를 컴파일러가 만들어줌
 	//Student() {}
+
+	void show() {
+		cout << "학번은" << nHakbun << "입니다" << endl;
+		cout << "이름은" << sName << "입니다" << endl;
+	}
 };
 
 int main(void) {
 	Student stu;
+	stu.show();
 	return 0;
 }
