@@ -10,14 +10,9 @@ private:
 	//반환형을 갖고있지 않는다.
 public:
 	Student();
+	Student(int Hakbun, string eName);
 	void show();
 };
-
-int main(void) {
-	Student stu;
-	stu.show();
-	return 0;
-}
 
 Student::Student() {
 	nHakbun = 1234;
@@ -25,7 +20,24 @@ Student::Student() {
 	cout << "학번이 등록되었습니다." << endl;
 }
 
+Student::Student(int Hakbun, string eName) {
+	nHakbun = Hakbun;
+	sName = eName;
+}
+
 void Student::show() {
 	cout << "학번은 " << nHakbun << "입니다" << endl;
-	cout << "이름은 " << sName << "입니다" << endl;
+	cout << "이름은 " << sName << "입니다" << endl << endl;
+}
+
+
+int main(void) {
+	Student stu1 = Student();
+	stu1.show();
+
+	Student stu2 = Student(2111,"JHJ");
+	stu2.show();
+
+
+	return 0;
 }
