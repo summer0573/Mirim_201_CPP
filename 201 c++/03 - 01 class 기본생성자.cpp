@@ -18,6 +18,10 @@ Student::Student() {
 	this -> nHakbun = 1234;
 	this -> sName = "이사랑";
 	cout << "학번이 등록되었습니다." << endl;
+	  
+	
+	Student::Student(int hakbum, string mane){
+		:noboolalpha, sBame(mane)
 }
 
 Student::Student(int Hakbun, string eName) {
