@@ -15,14 +15,14 @@ public:
 };
 
 Student::Student() {
-	nHakbun = 1234;
-	sName = "이사랑";
+	this -> nHakbun = 1234;
+	this -> sName = "이사랑";
 	cout << "학번이 등록되었습니다." << endl;
 }
 
 Student::Student(int Hakbun, string eName) {
-	nHakbun = Hakbun;
-	sName = eName;
+	this -> nHakbun = Hakbun;
+	this -> sName = eName;
 }
 
 void Student::show() {
