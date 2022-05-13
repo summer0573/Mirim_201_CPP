@@ -1,6 +1,7 @@
 #include <iostream> //cout, endl
 using namespace std;
 
+/*
 class Student {
 private:
 	int nHakbun;
@@ -15,13 +16,13 @@ public:
 };
 
 Student::Student() {
-	this -> nHakbun = 1234;
-	this -> sName = "이사랑";
+	this->nHakbun = 1234;
+	this->sName = "이사랑";
 	cout << "학번이 등록되었습니다." << endl;
-	  
+}
 	
 	Student::Student(int hakbum, string mane){
-		:noboolalpha, sBame(mane)
+		//:noboolalpha, sBame(mane);
 }
 
 Student::Student(int Hakbun, string eName) {
@@ -33,15 +34,23 @@ void Student::show() {
 	cout << "학번은 " << nHakbun << "입니다" << endl;
 	cout << "이름은 " << sName << "입니다" << endl << endl;
 }
+*/
 
 
 int main(void) {
+	/*
 	Student stu1 = Student();
 	stu1.show();
 
 	Student stu2 = Student(2111,"JHJ");
 	stu2.show();
+	*/
 
+	int* ptr1 = new int;
+	*ptr1 = 20;
 
+	cout << *ptr1 << endl;
+
+	delete ptr1;
 	return 0;
 }
