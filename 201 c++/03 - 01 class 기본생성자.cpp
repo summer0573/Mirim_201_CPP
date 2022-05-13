@@ -1,7 +1,7 @@
 #include <iostream> //cout, endl
 using namespace std;
 
-/*
+
 class Student {
 private:
 	int nHakbun;
@@ -34,24 +34,14 @@ void Student::show() {
 	cout << "학번은 " << nHakbun << "입니다" << endl;
 	cout << "이름은 " << sName << "입니다" << endl << endl;
 }
-*/
 
 
 int main(void) {
-	/*
-	Student stu1 = Student();
-	stu1.show();
 
-	Student stu2 = Student(2111,"JHJ");
-	stu2.show();
-	*/
+	Student* stu2 = new Student(2111,"JHJ");
+	stu2 -> show();
 
-	int* ptr2 = new int[4];
-	for (int i = 0; i < 4; i++) {
-		ptr2[i] = 10 + i;
-		cout << ptr2[i] << " ";
-	}
+	delete stu2;
 
-	delete []ptr2;
 	return 0;
 }
