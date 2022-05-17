@@ -12,9 +12,10 @@ private:
 	//반환형을 갖고있지 않는다.
 public:
 	Student();
-	Student(int Hakbun, const char* eName);
+	Student(int Hakbun, const char* Name);
+	Student(const Student& rhs);
 	~Student();
-	void show();
+
 };
 
 	Student::Student()
@@ -30,6 +31,11 @@ public:
 		sName = new char[len];
 		strcpy(sName, Name);
 	}
+	// 직접 작성 안해도 컴파일러가 알아서 만들어주는 복사 생성자
+	Student::Student(const Student& rhs)
+		:nHakbun(rhs.nHakbun), sName(rhs.sName)
+	{
+}
 
 	Student :: ~Student()
 	{
@@ -45,8 +51,10 @@ public:
 	}
 
 int main(void) {
-
+	//일반생성자 호출
 	Student stu1 = Student(2111, "JHJ");
+	//(1111,"JHJ")
+	Student stu2 = stu1;
 	stu1.show();
 	return 0;
 }
