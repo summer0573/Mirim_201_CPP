@@ -29,6 +29,13 @@ public:
 		sName = new char[len];
 		strcpy(sName, Name);
 	}
+
+	Student :: ~Student()
+	{
+		delete[]sName;
+		cout << "소멸자 호출" << endl;
+	}
+
 	void Student::show(void)
 	{
 		cout << "학번은 " << nHakbun << "입니다." << endl;
