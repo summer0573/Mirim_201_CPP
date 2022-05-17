@@ -6,13 +6,14 @@ using namespace std;
 class Student {
 private:
 	int nHakbun;
-	const char* sName;
+	char* sName;
 
 	//생성자: 객체가 생성되면 자동으로 호출되는 함수
 	//반환형을 갖고있지 않는다.
 public:
 	Student();
 	Student(int Hakbun, const char* eName);
+	~Student();
 	void show();
 };
 
