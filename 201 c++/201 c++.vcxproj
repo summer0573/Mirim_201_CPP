@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="20220520 코드 수정하기.cpp" />
     <ClCompile Include="220520 상속.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

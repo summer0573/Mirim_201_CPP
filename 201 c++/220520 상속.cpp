@@ -15,7 +15,6 @@ public: //멤버 함수
 class Student : public Person{ //상속 받을 클래스
 private :
 	int nHakbun;
-
 public:
 	Student();
 	Student(string name, int age, int kanbun);

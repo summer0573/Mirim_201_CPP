@@ -18,5 +18,8 @@
     <ClCompile Include="220520 상속.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="20220520 코드 수정하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
