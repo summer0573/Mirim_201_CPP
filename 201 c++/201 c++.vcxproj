@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="20220520 코드 수정하기.cpp" />
-    <ClCompile Include="220520 상속.cpp" />
+    <ClCompile Include="깊은 복사_2111 정현진.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
