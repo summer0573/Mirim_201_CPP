@@ -18,5 +18,11 @@
     <ClCompile Include="04 - 01 연산자 오버로딩 %28기본%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="04 - 01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04 - 01.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
