@@ -16,7 +16,6 @@ public:
 	Student(int Hakbun, const char* Name);
 	Student(const Student& rhs);
 	~Student();
-	Student& operator=(const Student& rhs);
 
 	void show();
 
@@ -54,14 +53,6 @@ void Student::show()
 {
 	cout << "학번은 " << nHakbun << "입니다" << endl;
 	cout << "이름은 " << sName << "입니다" << endl << endl;
-}
-
-//default 대입 연산자
-Student& Student::operator=(const Student& rhs){
-	nHakbun = rhs.nHakbun;
-	sName = rhs.sName;
-
-	return *this;
 }
 
 int main(void)
