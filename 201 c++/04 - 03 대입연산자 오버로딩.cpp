@@ -56,10 +56,14 @@ void Student::show()
 	cout << "이름은 " << sName << "입니다" << endl << endl;
 }
 
-//default 대입 연산자
+//대입연산자 오버로딩
 Student& Student::operator=(const Student& rhs){
 	nHakbun = rhs.nHakbun;
-	sName = rhs.sName;
+
+	cout << "일반생성자 호출." << endl;
+	int len = strlen(rhs.sName) + 1;		// 공간의 갯수 파악
+	sName = new char[len];			// 갯수만큼 메모리 할당
+	strcpy(sName, rhs.sName);
 
 	return *this;
 }
