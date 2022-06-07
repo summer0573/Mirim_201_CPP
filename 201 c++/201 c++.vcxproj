@@ -19,9 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="04 - 01.h" />
-    <ClCompile Include="04 - 01 연산자 오버로딩 %28기본%29.cpp" />
-    <ClCompile Include="04 - 01.cpp" />
+    <ClCompile Include="04-02 연산자 오버로딩 (연습문제).cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
