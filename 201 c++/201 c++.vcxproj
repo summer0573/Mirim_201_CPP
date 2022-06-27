@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="04 - 03 대입연산자 오버로딩.cpp" />
+    <ClCompile Include="00 - 1학기 수행평가3_학번이름.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
