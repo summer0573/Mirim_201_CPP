@@ -12,9 +12,10 @@ public:
 	m_string(const char* ms); //문자열로부터 생성하는 생성자
 	m_string(const m_string& ms); //복사생성자
 	~m_string(); //소멸자
-	m_string& operator = (const m_string& ms); //대입연산자
-	m_string& operator += (const m_string& ms); //덧셈 연산자
-	int operator == (const m_string& ms); //비교 연산자
+	m_string& operator= (const m_string& ms); //대입연산자
+	m_string& operator+= (const m_string& ms); //덧셈 연산자
+	int operator== (const m_string& ms); //비교 연산자
+	m_string operator+(const m_string& ms);
 	
 	//문자열의 글자수를 반환
 	int size();
@@ -79,13 +80,6 @@ m_string::m_string(const m_string& ms)
 	strcpy(_Myptr, ms._Myptr);
 }
 
-m_string::m_string()
-{
-	if (_Myptr != NULL)
-		delete[]_Myptr;
-
-}
-
 m_string& m_string::operator= (const m_string& ms)
 {
 	if (_Myptr != NULL)
@@ -108,12 +102,12 @@ m_string& m_string::operator+= (const m_string& ms)
 	return *this;
 }
 
-bool m_string::operator == (const m_string& ms)
+int m_string::operator== (const m_string& ms)
 {
-	return strcmp(_Myptr, ms._Myptr) ? false : true;
+	return strcmp(_Myptr, ms._Myptr) ? -1 : 0;
 }
 
-m_string m_string::operator + (const m_string& ms)
+m_string m_string::operator+ (const m_string& ms)
 {
 	char* temp = new char[_Mysize + ms._Mysize - 1];
 	strcpy(temp, _Myptr);
