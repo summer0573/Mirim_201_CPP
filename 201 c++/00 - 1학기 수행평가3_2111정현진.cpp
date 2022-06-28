@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-
+#include <string>
 using namespace std;
 
 class m_string {
@@ -7,6 +7,12 @@ class m_string {
 private:
 	char *_Myptr; //문자열의 시작 주소를 담고 있는 포인터
 	int _Mysize; // 문자열의 글자수
+	friend ostream& operator<<(ostream& os, const m_string& ms)
+	{
+		os << ms._Myptr;
+		return os;
+	}
+
 public:
 	m_string(); //기본 생성자
 	m_string(const char* ms); //문자열로부터 생성하는 생성자
@@ -20,19 +26,10 @@ public:
 	//문자열의 글자수를 반환
 	int size();
 
-
-
-	friend ostream& operator<<(ostream& os, const m_string& ms)
-	{
-		os << ms._Myptr;
-		return os;
-	}
 };
 
-int m_string::size() {
-
+int m_string::size() { //글자수 리턴
 	return _Mysize;
-
 }
 
 int main(void)
@@ -60,16 +57,13 @@ int main(void)
 
 m_string::m_string()
 {
-	_Myptr = 0;
-	_Mysize = NULL;
-
 }
 
 m_string::m_string(const char* ms)
 {
 	_Mysize = strlen(ms) + 1;
 	_Myptr = new char[_Mysize];
-	strcpy(_Myptr, ms);
+	strcpy(_Myptr, ms); //단어 합치기
 
 }
 
@@ -117,12 +111,6 @@ m_string m_string::operator+ (const m_string& ms)
 	delete[]temp;
 
 	return result;
-}
-
-ostream& operator<< (ostream& os, const m_string& ms)
-{
-	os << ms._Myptr;
-	return os;
 }
 
 istream& operator>> (istream& is, m_string& ms)
