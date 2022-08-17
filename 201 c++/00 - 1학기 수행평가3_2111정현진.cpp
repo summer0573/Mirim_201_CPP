@@ -48,75 +48,72 @@ int main(void)
 
 	str2 = str2 + "ab";
 	cout << str2 << " " << str2.size() << endl;
-
+	 
 	cout << (str1 == "123") << endl;
 	cout << (str1 == str2) << endl;
 
 	return 0;
 }
 
-m_string::m_string()
+m_string::m_string() //기본 생성자
 {
 }
 
-m_string::m_string(const char* ms)
+m_string::m_string(const char* ms)  //문자열로부터 생성하는 생성자 복사
 {
 	_Mysize = strlen(ms) + 1;
 	_Myptr = new char[_Mysize];
-	strcpy(_Myptr, ms); //단어 합치기
+	strcpy(_Myptr, ms);
 
 }
 
-m_string::m_string(const m_string& ms)
+m_string::m_string(const m_string& ms) //복사 생성자 복사
 {
 	_Mysize = ms._Mysize;
 	_Myptr = new char[_Mysize];
 	strcpy(_Myptr, ms._Myptr);
 }
 
-m_string& m_string::operator= (const m_string& ms)
+m_string& m_string::operator= (const m_string& ms) //대입연산자
 {
-	if (_Myptr != NULL)
+	if (_Myptr != NULL) //myptr이 null이면 delete
 		delete[]_Myptr;
 	_Mysize = ms._Mysize;
 	_Myptr = new char[_Mysize];
 	strcpy(_Myptr, ms._Myptr);
-	return *this;
+	return *this; //다 대입하고 mstring 리턴
 }
 
 m_string& m_string::operator+= (const m_string& ms)
 {
 	char* temp = new char[_Mysize + ms._Mysize - 1];
 	strcpy(temp, _Myptr);
-	strcat(temp, ms._Myptr);
+	strcat(temp, ms._Myptr); //단어 합침
 
 	if (_Myptr != NULL)
 		delete[]_Myptr;
-	_Myptr = temp;
+	_Myptr = temp; 
 	return *this;
 }
 
 int m_string::operator== (const m_string& ms)
 {
-	return strcmp(_Myptr, ms._Myptr) ? -1 : 0;
+	return strcmp(_Myptr, ms._Myptr) ? -1 : 0; //둘이 같으면 -1 다르면 0
 }
 
-m_string m_string::operator+ (const m_string& ms)
+m_string m_string::operator+ (const m_string& ms) ///더하기 연산자
 {
 	char* temp = new char[_Mysize + ms._Mysize - 1];
-	strcpy(temp, _Myptr);
-	strcat(temp, ms._Myptr);
+	strcpy(temp, _Myptr); //복사하기
+	strcat(temp, ms._Myptr); //객체끼리 더하는 코드
 
 	m_string result(temp);
-	delete[]temp;
+	delete[]temp; //동적할당을 했기 때문에 temp를 delete 한다.
 
-	return result;
+	return result; //더한 result를 return
 }
 
-istream& operator>> (istream& is, m_string& ms)
-{
-	char _Myptr[100];
-	is >> _Myptr;
-	ms = m_string(_Myptr);
-	return is;
+
+m_string :: ~m_string () {
+
 }
