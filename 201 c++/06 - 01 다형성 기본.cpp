@@ -43,11 +43,11 @@ void main(void) {
 	delete animal;
 
 	animal = new Tiger();
-	animal->roar();
+	animal->roar(); //¾îÈï
 	delete animal;
 
 
 	animal = new Dog();
-	animal->roar();
+	animal->roar(); //¸Û¸Û
 	delete animal;
 }
