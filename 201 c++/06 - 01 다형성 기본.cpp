@@ -34,9 +34,20 @@ public:
 };
 
 void main(void) {
+	/*
 	Animal animal;
 	animal.roar();
+	*/
+	Animal* animal = new Animal;
+	animal -> roar();
+	delete animal;
 
-	Dog dog;
-	dog.roar();
+	animal = new Tiger();
+	animal->roar();
+	delete animal;
+
+
+	animal = new Dog();
+	animal->roar();
+	delete animal;
 }
