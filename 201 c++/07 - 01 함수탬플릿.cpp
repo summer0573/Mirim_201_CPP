@@ -14,7 +14,10 @@ int main(void) {
 	cout << sum<string>("1", "2") << endl;
 }
 
-
+template <typename T>
+T sum(T a, T b) {
+	return a + b;
+}
 
 int sum(int a, int b)
 {
