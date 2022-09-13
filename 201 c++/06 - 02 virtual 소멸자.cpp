@@ -1,9 +1,9 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 class Animal {
-
 public:
 	Animal() { cout << "Animal 积己" << endl; }
 	virtual ~Animal() { cout << "Animal 家戈" << endl; }
@@ -16,7 +16,9 @@ public:
 	virtual ~Tiger() { cout << "Tiger 家戈" << endl; }
 };
 
-void main(void) {
+
+void main(void)
+{
 	Animal* animal = new Tiger();
 	delete animal;
 }
