@@ -36,4 +36,4 @@ void main(void)
 	vector<int>::
 	for (int i = 0; i < i3.size(); i++)
 		cout << i3[i] << " ";
-}
+}...
