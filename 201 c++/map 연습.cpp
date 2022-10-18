@@ -16,10 +16,7 @@ void main(void)
 	for (iter = Transformers.begin(); iter != Transformers.end(); iter++)
 		cout << iter->first << "의 차량은 " << iter->second << endl;
 
-	Transformers.erase("재즈");
-
-
-	cout << "영화의 대장은 " << Transformers["옵티머스 프라임"] << endl;
+	cout << "드라마의 대장은 " << Transformers["옵티머스 프라임"] << endl;
 
 
 }
