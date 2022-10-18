@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="08 - 02 map.cpp" />
-    <ClCompile Include="08-01동작배열.cpp" />
-    <ClCompile Include="map 연습.cpp" />
-    <ClCompile Include="반복자.cpp" />
+    <ClCompile Include="09 - 01 enum.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
