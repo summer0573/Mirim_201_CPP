@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="08 - 02 map.cpp" />
     <ClCompile Include="09 - 02 범위기반.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
