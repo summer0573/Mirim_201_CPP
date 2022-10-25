@@ -18,9 +18,10 @@ void main(void)
 	IBW["이준호"] = "강태오";
 
 	// vector의 모든 원소 출력(반복자)
-	map<string, string>::iterator iter;
-	for (auto iter = IBW.begin(); iter != IBW.end(); iter++)
-		cout << iter->first << "역 " << iter->second << "분" << endl;
+	for (auto& iter : IBW) {
+	cout << iter.first << "역 " << iter.second << "분" << endl;
+}
+
 
 	cout << "드라마의 주인공은 " << IBW["우영우"] << endl;
 }
